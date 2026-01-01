@@ -3,7 +3,7 @@ export default function Hero() {
     <section
       className="relative h-[90vh] w-full bg-cover bg-center"
       style={{
-        backgroundImage: "url('/coffee-hero.png')", // your PDF image
+        backgroundImage: "url('/coffee-hero.png')",
       }}
     >
       {/* Dark overlay for contrast */}

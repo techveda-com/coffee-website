@@ -1,16 +1,61 @@
-# React + Vite
+# ☕ Cafe Website – React + Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive **Cafe / Coffee Shop website** built using **React**, **Tailwind CSS v4**, and **DaisyUI**.  
+This project is inspired by a Figma community design and focuses on clean UI, responsiveness, and reusable components.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+🔗 **Live Website:**  
+https://techveda-demo01.netlify.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🎨 Figma Design Reference
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔗 **Figma File:**  
+https://www.figma.com/design/VzZ2L0Uy3wGqGsitwR42eo/Coffea---Free-Responsive-Coffee-Shop-Website-Template--Community-?node-id=0-1&p=f&t=DRGN0eAZlH4CoUFd-0
+
+> This project UI is implemented based on the above Figma community design.
+
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ **React.js**
+- 🎨 **Tailwind CSS v4**
+- 🌼 **DaisyUI**
+- 📱 Fully Responsive Design
+- 🧩 Component-based Architecture
+
+---
+
+## ✨ Features
+
+- Modern cafe landing page UI
+- Responsive layout for all screen sizes
+- Reusable React components
+- Clean and minimal design
+- Tailwind utility-first styling
+- DaisyUI components integration
+
+---
+
+## 📂 Project Setup
+
+Follow these steps to run the project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/techveda-com/coffee-website
+
+# Navigate to project directory
+cd cafe-website
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```

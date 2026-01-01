@@ -6,7 +6,7 @@ const TestimonialSection = () => {
   const extendedData = [...testimonialData, ...testimonialData];
 
   return (
-    <section className="w-full bg-[#F5F1EB] py-20 overflow-hidden">
+    <section className="w-full bg-[#F5F1EB] py-20 overflow-hidden" id="testimonial">
       {/* Header */}
       <div className="text-center mb-16 space-y-2 px-4">
         <h3 className="text-[#30261C] text-2xl font-medium font-serif">

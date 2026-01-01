@@ -14,8 +14,16 @@ export default function Home() {
       <Navbar />
       <Hero />
       <CategoryTabs />
-      <ProductSlider title="Our Special Coffee" items={coffeeData} />
-      <ProductSlider title="Our Special Desserts" items={dessertData} />
+      <ProductSlider
+        title="Our Special Coffee"
+        items={coffeeData}
+        id="coffee-section"
+      />
+      <ProductSlider
+        title="Our Special Desserts"
+        items={dessertData}
+        id="dessert-section"
+      />
       <CoffeeBeansSection />
       <TestimonialSection />
       <NewsletterBanner />

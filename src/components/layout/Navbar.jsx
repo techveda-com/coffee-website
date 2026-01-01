@@ -4,7 +4,13 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-
+  const LINKS = [
+    { title: "Home", link: "/" },
+    { title: "Coffee", link: "coffee-section" },
+    { title: "Bakery", link: "dessert-section" },
+    { title: "Shop", link: "coffee-section" },
+    { title: "About", link: "testimonial" },
+  ];
   return (
     <header className="absolute top-6 left-0 w-full z-50">
       {/* Centered Navbar Container */}
@@ -17,14 +23,14 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-10 text-sm uppercase tracking-widest">
-          {["Home", "Coffee", "Bakery", "Shop", "About"].map((item) => (
+          {LINKS.map((item) => (
             <li
               key={item}
               className="relative cursor-pointer after:absolute after:left-0 after:-bottom-1 
                         after:h-px after:w-0 after:bg-white after:transition-all 
                          after:duration-300 hover:after:w-full"
             >
-              {item}
+              <a href={`#${item.link}`}>{item.title}</a>
             </li>
           ))}
         </ul>
@@ -38,13 +44,13 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {open && (
         <div className="md:hidden mx-auto mt-4 max-w-6xl bg-black/90 text-white rounded-2xl px-6 py-6 space-y-4">
-          {["Home", "Coffee", "Bakery", "Shop", "About"].map((item) => (
-            <p
-              key={item}
+          {LINKS.map((item) => (
+            <a
+              href={item.link}
               className="uppercase tracking-widest border-b border-white/20 pb-2"
             >
-              {item}
-            </p>
+              {item.title}
+            </a>
           ))}
         </div>
       )}
