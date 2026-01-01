@@ -25,7 +25,7 @@ export default function Navbar() {
         <ul className="hidden md:flex gap-10 text-sm uppercase tracking-widest">
           {LINKS.map((item) => (
             <li
-              key={item}
+              key={item.title}
               className="relative cursor-pointer after:absolute after:left-0 after:-bottom-1 
                         after:h-px after:w-0 after:bg-white after:transition-all 
                          after:duration-300 hover:after:w-full"
@@ -45,12 +45,12 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden mx-auto mt-4 max-w-6xl bg-black/90 text-white rounded-2xl px-6 py-6 space-y-4">
           {LINKS.map((item) => (
-            <a
-              href={item.link}
+            <p
               className="uppercase tracking-widest border-b border-white/20 pb-2"
+              key={`${item.title}-phone`}
             >
-              {item.title}
-            </a>
+              <a href={`#${item.link}`}>{item.title}</a>
+            </p>
           ))}
         </div>
       )}
